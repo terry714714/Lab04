@@ -1,7 +1,31 @@
 <html style="background-color: white;"><head>
     <title>My first web </title>
 </head>
-
+<script>
+  $(document).ready(function() {
+   $("#div1").hide();  
+   $("#div2").hide();  
+   $("#div3").hide();  
+     $("#button1").click(function() {      
+      $("#div1").toggle(1000);  
+      $("#button1").hide();  
+       return false;
+     });
+     $("#button2").click(function() {      
+      $("#div2").fadeIn(1000); 
+      $("#button2").hide();    
+       return false;
+     });
+     $("#button3").click(function() {      
+      $("#div3").toggle(1000); 
+      $("#button3").hide();    
+       return false;
+     });
+  });
+  function submmit() {
+   alert("感謝你的寶貴意見!");
+  }
+ </script>
 <body bgcolor="deep-red">
 
 <span style="font-size: 50px;">

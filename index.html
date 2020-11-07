@@ -5,12 +5,17 @@
 <script>
   $(document).ready(function() {
    $("#div1").hide();   
+   $("#div2").hide(); 
      $("#button1").click(function() {      
       $("#div1").toggle(1000);  
       $("#button1").hide();  
        return false;
      });
-
+ $("#button2").click(function() {      
+      $("#div2").fadeIn(1000); 
+      $("#button2").hide();    
+       return false;
+     });
   });
   function submmit() {
    alert("感謝你的寶貴意見!");
@@ -29,7 +34,11 @@
 <h1>猜猜這是誰</h1>
 <button id="button1">點下去~</button>
 <div id="div1" onclick= "submmit" style="display: none;"><img src="https://upload2.inven.co.kr/upload/2019/04/30/bbs/i15799755028.jpg" id="img1"></div>
+<h2>
+<button id="button2">再點一個!</button>
+<div id="div2" style="display: none;"><img src="https://img.mttmp.com/images/2018/07/15/01/2145_Ib3vIf_crl25n3.jpg!r800x0.jpg"></div>
 
+</h2>
  <form>
   <div id="list">
    <h3>留言板</h3>

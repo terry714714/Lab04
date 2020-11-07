@@ -1,6 +1,7 @@
 <html style="background-color: white;"><head>
     <title>My first web </title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type = "text/javascript"></script>
 <script>
   $(document).ready(function() {
    $("#div1").hide();   
@@ -25,13 +26,13 @@
 
         </h1>
 </span>&gt;
+<h1>猜猜這是誰</h1>
 <button id="button1">點下去~</button>
-<div id="div1" style="display: none;"><img src="https://upload2.inven.co.kr/upload/2019/04/30/bbs/i15799755028.jpg" id="img1"></div>
-
+<div id="div1" onclick= "submmit" style="display: none;"><img src="https://upload2.inven.co.kr/upload/2019/04/30/bbs/i15799755028.jpg" id="img1"></div>
 
  <form>
   <div id="list">
-   <h3>留言板123</h3>
+   <h3>留言板</h3>
    <p><input type="text" name="name" id="input1" placeholder="你最愛的動漫角色"></p>
    <p><textarea rows="6" cols="21" style="font-size:24px" placeholder="在這裡輸入你為甚麼喜歡她"></textarea></p>
    <button onclick="submmit()" style="font-size:20px">送出</button>
